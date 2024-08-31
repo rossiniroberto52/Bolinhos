@@ -157,7 +157,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_Name);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "F_NewClient";
+            this.ShowIcon = false;
             this.Text = "Novo cliente";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -41,6 +41,8 @@
             this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarPedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoProdutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,9 +99,13 @@
             this.editarUmJáExistenteToolStripMenuItem.Name = "editarUmJáExistenteToolStripMenuItem";
             this.editarUmJáExistenteToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.editarUmJáExistenteToolStripMenuItem.Text = "Editar um já existente";
+            this.editarUmJáExistenteToolStripMenuItem.Click += new System.EventHandler(this.editarUmJáExistenteToolStripMenuItem_Click);
             // 
             // itensToolStripMenuItem
             // 
+            this.itensToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoProdutoToolStripMenuItem,
+            this.editarProdutosToolStripMenuItem});
             this.itensToolStripMenuItem.Name = "itensToolStripMenuItem";
             this.itensToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.itensToolStripMenuItem.Text = "Produtos";
@@ -116,13 +122,13 @@
             // novoOrçamentoToolStripMenuItem
             // 
             this.novoOrçamentoToolStripMenuItem.Name = "novoOrçamentoToolStripMenuItem";
-            this.novoOrçamentoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoOrçamentoToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.novoOrçamentoToolStripMenuItem.Text = "Novo orçamento";
             // 
             // tabelDePreçosToolStripMenuItem
             // 
             this.tabelDePreçosToolStripMenuItem.Name = "tabelDePreçosToolStripMenuItem";
-            this.tabelDePreçosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tabelDePreçosToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.tabelDePreçosToolStripMenuItem.Text = "Tabel de preços";
             // 
             // pedidosToolStripMenuItem
@@ -145,6 +151,19 @@
             this.editarPedidosToolStripMenuItem.Name = "editarPedidosToolStripMenuItem";
             this.editarPedidosToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.editarPedidosToolStripMenuItem.Text = "Editar pedidos";
+            // 
+            // novoProdutoToolStripMenuItem
+            // 
+            this.novoProdutoToolStripMenuItem.Name = "novoProdutoToolStripMenuItem";
+            this.novoProdutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoProdutoToolStripMenuItem.Text = "Novo produto";
+            this.novoProdutoToolStripMenuItem.Click += new System.EventHandler(this.novoProdutoToolStripMenuItem_Click);
+            // 
+            // editarProdutosToolStripMenuItem
+            // 
+            this.editarProdutosToolStripMenuItem.Name = "editarProdutosToolStripMenuItem";
+            this.editarProdutosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarProdutosToolStripMenuItem.Text = "Editar produtos";
             // 
             // Form1
             // 
@@ -182,6 +201,8 @@
         private System.Windows.Forms.ToolStripMenuItem editarPedidosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editarUmJáExistenteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem novoProdutoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarProdutosToolStripMenuItem;
     }
 }
 

@@ -32,5 +32,17 @@ namespace project_mama
             F_NewClient f_NewClient = new F_NewClient();
             f_NewClient.ShowDialog();
         }
+
+        private void editarUmJáExistenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_Edit_User f_Edit_User = new F_Edit_User();
+            f_Edit_User.ShowDialog();
+        }
+
+        private void novoProdutoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_NewItem f_NewItem = new F_NewItem();
+            f_NewItem.ShowDialog();
+        }
     }
 }
